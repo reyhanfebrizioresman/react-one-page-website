@@ -1,0 +1,82 @@
+.hero-container{
+    background-image: url(../Image/background.png);
+    height: 850px;
+    width: 100%;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -4rem;
+
+        h1{
+            font-size: 48px;
+            color: #fff;
+            margin-bottom: 1rem;
+            text-align: center;
+
+            @media screen and(max-width:768px){
+                font-size: 40px;
+            }
+
+            span{
+                color: #d0ff00;
+                border-bottom: 2px solid #d0ff00;;
+            }
+        }
+
+        p{
+            max-width: 500px;
+            color: #969696;
+            margin-bottom: 2rem;
+            text-align: center;
+            @media screen and(max-width:768px){
+                max-width: 400px;
+            }
+        }
+
+        .btn{
+            margin-top: 1rem;
+            .btn-hire{
+                text-decoration: none;
+                background-color: #d0ff00;
+                padding: 0.7rem 1.3rem;
+                border-radius: 8px;
+                margin: 0 2rem;
+                transition: 0.3s ease;
+
+                &:hover{
+                    background-color: #969696;
+                }
+
+                @media screen and(max-width:768px){
+                    margin: 0 0.5rem;
+                    padding: 0.5rem 0.5rem;
+                }
+            }
+            .btn-download{
+                text-decoration: none;
+                background-color: transparent;
+                padding: 0.7rem 1.3rem;
+                border-radius: 8px;
+                border: 2px solid #969696;
+                color: #969696;
+                transition: 0.3s ease;
+
+                &:hover{
+                    background-color: #969696;
+                    color: #fff;
+                }
+                @media screen and(max-width:768px){
+                    padding: 0.5rem 0.5rem;
+                }
+            }
+        }
+    }
+}

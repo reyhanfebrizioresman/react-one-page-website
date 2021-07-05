@@ -1,0 +1,38 @@
+.card{
+    background-color: #fff;
+    width: 350px;
+    height: 450px;
+    border-radius: 8px;
+    margin: 0 2rem;
+    transition: 0.3s ease-in-out;
+
+    @media screen and (max-width:768px){
+        margin: 2rem 0;
+    }
+
+    &:hover{
+        transform: scale(1.02);
+    }
+
+    img{
+        width: 340px;
+        height: 200px;
+    }
+    .desc{
+        font-size: 14px;
+        margin: 2rem 0;
+    }
+    .btn{
+        background-color: #d0ff00;
+        padding: 0.6rem 1.2rem;
+        border-radius: 8px;
+        text-decoration: none;
+        color: #000;
+        transition: 0.3s ease;
+
+        &:hover{
+            background-color: #969696;
+            color: #fff;
+        }
+    }
+}
